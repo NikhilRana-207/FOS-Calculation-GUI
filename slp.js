@@ -1,14 +1,12 @@
 const submit = async () => {
 
-    let tanPhiSeapage = Number(document.getElementById('phiDashSeapage').value);
-    let tanBetaSeapage = Number(document.getElementById('betaSeapage').value);
-    let gammaSeapage = Number(document.getElementById('gammaSeapage').value);
-    let hSeapage = Number(document.getElementById('heightSeapage').value);
-    let wSeapage = Number(document.getElementById('wSeapage').value);
-    let zSeapage = Number(document.getElementById('zSeapage').value);
-    var fosSeapage = (1 - (gammaSeapage * wSeapage * hSeapage) / (gammaSeapage * zSeapage)) * (tanPhiSeapage / tanBetaSeapage);
-
-    alert(fosSeapage);
+    let p = Number(document.getElementById('p').value);
+    let b = Number(document.getElementById('b').value);
+    let y = Number(document.getElementById('y').value);
+    let yw = Number(document.getElementById('yw').value);
+    let h = Number(document.getElementById('h').value);
+    let z = Number(document.getElementById('z').value);
+    var fosSeapage = (1 - (yw*h) / (y*z)) * (Math.tan(p) / Math.tan(b));
 
     document.getElementById('modal_text').innerText = 'Your value has been calculated.';
     document.getElementById('desc').innerText = 'Calculated Answer :';
