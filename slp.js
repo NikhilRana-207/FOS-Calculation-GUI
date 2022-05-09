@@ -6,7 +6,7 @@ const submit = async () => {
     let yw = Number(document.getElementById('yw').value);
     let h = Number(document.getElementById('h').value);
     let z = Number(document.getElementById('z').value);
-    var fosSeapage = (1 - (yw*h) / (y*z)) * (Math.tan(p) / Math.tan(b));
+    var fosSeapage = (1 - (yw*h) / (y*z)) * (Math.tan(p*Math.PI/180) / Math.tan(b*Math.PI/180));
 
     document.getElementById('modal_text').innerText = 'Your value has been calculated.';
     document.getElementById('desc').innerText = 'Calculated Answer :';

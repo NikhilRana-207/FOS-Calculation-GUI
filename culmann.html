@@ -20,26 +20,31 @@
     <h1 class="details">Culmann's Method</h1>
 
     <!-- CULMAN-->
+
+    <div class="found_container culman">
+        Formula Used: FOS = (c*l + W*cosθ*tanΦ)/W*sinθ
+    </div>
+
     <div class="found_container culman">
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">C</label>
-            <input class="form-control" id="c" placeholder="C(in kPa)">
+            <label for="exampleFormControlInput1" class="form-label">c (Mobilized Cohesion)</label>
+            <input class="form-control" id="c" placeholder="c (in Pa)">
         </div>
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Length of Plane</label>
-            <input class="form-control" id="l" placeholder="l">
+            <input class="form-control" id="l" placeholder="l (in m)">
         </div>
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">W</label>
-            <input class="form-control" id="w" placeholder="W">
+            <label for="exampleFormControlInput1" class="form-label">Unit Weight of Wedge</label>
+            <input class="form-control" id="w" placeholder="W (in N/m)">
         </div>
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Theta</label>
-            <input class="form-control" id="t" placeholder="θ">
+            <label for="exampleFormControlInput1" class="form-label">θ (Inclination of Plane w.r.t. Horizontal)</label>
+            <input class="form-control" id="t" placeholder="θ (in degrees)">
         </div>
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Phi</label>
-            <input class="form-control" id="p" placeholder="Φ">
+            <label for="exampleFormControlInput1" class="form-label">Φ (Mobilized angle of shear resistance)</label>
+            <input class="form-control" id="p" placeholder="Φ (in degrees)">
         </div>
         <button class="btn btn-success submit" id="submitButton" type="button" data-bs-toggle="modal"
             data-bs-target="#submitButton">Submit</button>

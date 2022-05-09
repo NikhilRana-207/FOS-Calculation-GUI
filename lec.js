@@ -1,8 +1,8 @@
 const submit = async () => {
 
-    let tanPhi = Number(document.getElementById('phiDash').value);
-    let tanBeta = Number(document.getElementById('beta').value);
-    var fosInfinite = tanPhi / tanBeta;
+    let Phi = Number(document.getElementById('phiDash').value);
+    let Beta = Number(document.getElementById('beta').value);
+    var fosInfinite = Math.tan(Phi*Math.PI/180) / Math.tan(Beta*Math.PI/180);
 
     document.getElementById('modal_text').innerText = 'Your value has been calculated.';
     let a = document.getElementById('desc').innerText = 'Calculated Answer :';

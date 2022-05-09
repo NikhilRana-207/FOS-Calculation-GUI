@@ -17,32 +17,28 @@
         <p id="desc"></p>
         <button id="close">Close</button>
     </div>
-    <h1 class="details">SLP Method</h1>
+    <h1 class="details">Without Seepage</h1>
+
+    <div class="found_container seapage">
+        Formula Used: FOS = c'/Ns*γ*h
+    </div>
 
     <div class="found_container seapage">
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Φ'</label>
-            <input class="form-control" id="p" placeholder="Φ'">
+            <label for="exampleFormControlInput1" class="form-label">Ns (Stability Number)</label>
+            <input class="form-control" id="p" placeholder="Ns">
         </div>
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">β</label>
-            <input class="form-control" id="b" placeholder="β">
+            <label for="exampleFormControlInput1" class="form-label">γ (Unit Weight)</label>
+            <input class="form-control" id="b" placeholder="γ (in N/m^3)">
         </div>
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Y</label>
-            <input class="form-control" id="y" placeholder="y (in kPa)">
+            <label for="exampleFormControlInput1" class="form-label">h (Depth)</label>
+            <input class="form-control" id="h" placeholder="h (in m)">
         </div>
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Yw</label>
-            <input class="form-control" id="yw" placeholder="Yw (in kPa)">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">h</label>
-            <input class="form-control" id="h" placeholder="h (taken from bottom in m)">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Z</label>
-            <input class="form-control" id="z" placeholder="z">
+            <label for="exampleFormControlInput1" class="form-label">c' (Cohesive Moment)</label>
+            <input class="form-control" id="z" placeholder="c' (in Pa)">
         </div>
         <button class="btn btn-success submit" id="submitButton" type="button" data-bs-toggle="modal"
             data-bs-target="#submitButton">Submit</button>

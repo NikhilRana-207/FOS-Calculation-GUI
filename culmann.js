@@ -5,7 +5,7 @@ const submit = async () => {
     let w = Number(document.getElementById('w').value);
     let t = Number(document.getElementById('t').value);
     let p = Number(document.getElementById('p').value);
-    var ans = (c*l + w*Math.cos(t)*Math.tan(p))/(w*Math.sin(t));
+    var ans = (c*l + w*Math.cos(t*Math.PI/180)*Math.tan(p*Math.PI/180))/(w*Math.sin(t*Math.PI/180));
 
     document.getElementById('modal_text').innerText = 'Your value has been calculated.';
     let a = document.getElementById('desc').innerText = 'Calculated Answer :';
